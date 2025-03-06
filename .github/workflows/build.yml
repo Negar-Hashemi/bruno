@@ -34,4 +34,6 @@ jobs:
       - name: Testing on OS (${{ matrix.os }}) with Node.js (version ${{ matrix.node-version }}) attempt ${{ matrix.attempt }}
         run: |
           echo "Run attempt: ${{ matrix.attempt }}"
-          npm test:e2e
+          npm run test:e2e
+          npm run test:report
+
